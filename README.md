@@ -1,4 +1,4 @@
-# terraform-azure-key-vault
+# terraform-azure-user-identity
 
 Terraform module to manage a user assigned identity.
 
@@ -9,7 +9,7 @@ See `variables.tf` for more information about input values.
 ## Usage
 
 ```hcl
-module "identity"
+module "identity" {
   source = "github.com/scalair/terraform-azure-user-identity"
 
   location              = "francecentral"
@@ -21,4 +21,5 @@ module "identity"
     client      = "scalair"
     terraform   = "true"
   }
+}
 ```
